@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pyrticle_life"
+version = "0.1.0"
+description = ""
+authors = ["gianfa"]
+readme = "README.md"
+packages = [{include = "pyrticles"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.4"
+matplotlib = "^3.6.2"
+pygame = "^2.1.2"
+pytest = "^7.2.0"
+
+# style
+flake8 = "^5.0.4"
+black = "^22.10.0"
+
+[tool.black]
+line-length = 79
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

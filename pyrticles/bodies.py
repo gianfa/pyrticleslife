@@ -2,13 +2,13 @@
 Here the bodies definitions are collected.
 
 """
-from typing import Iterable
+from typing import Iterable, Callable
 
 from pyrticles.utils import random_xy
 
 
 def create_group(
-    species: callable,
+    species: Callable,
     number: int,
     color: str,
     bodies: Iterable,
